@@ -5,16 +5,15 @@
     box-sizing: border-box;
 }
 
-/* Import fonts */
-@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
-
 /* Smooth all scrolling */
 html {
     scroll-behavior: smooth;
+    background-color: black;
 }
 
 .material-symbols-outlined {
-  font-variation-settings:
+    color: white;
+    font-variation-settings:
   'FILL' 0,
   'wght' 400,
   'GRAD' 0,
@@ -33,6 +32,7 @@ img {
     margin-left: 10rem;
     margin-right: 10rem;
     /* display: inline-block; */
+    border: 5px solid white;
 }
 
 header {
@@ -46,7 +46,14 @@ header {
     padding-bottom: 1rem;
 }
 .image-slider-heading {
+    color: white;
     font-family: 'Righteous', cursive;
+    font-weight: 400;
+}
+.image-slider-info {
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 11pt;
 }
 
 .gallery-container {
@@ -61,8 +68,7 @@ header {
     overflow-x: scroll;
     scrollbar-width: none;
     display: flex;
-    /* width: 100em; */
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .slider-container::-webkit-scrollbar {
     display: none;
