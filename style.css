@@ -34,7 +34,10 @@ img {
     border: 5px solid white;
     content-visibility: auto;
     image-rendering: optimizeSpeed;
+    opacity: 0;
+    transition: all .5s ease;
 }
+
 
 header {
     display: flex;
@@ -93,4 +96,8 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.is-visible {
+    opacity: 1;
 }

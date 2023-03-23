@@ -28,3 +28,30 @@ function rightArrowCycle() {
     }
     console.log(counterValue)  
 }
+
+
+// Create function that triggers transition when in viewport.
+const imageObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if(entry.isIntersecting) {
+            entry.target.classList.add('is-visible')
+            return;
+        }
+        entry.target.classList.remove('is-visible')
+    })
+})
+
+const theImages = document.querySelectorAll('.actual-image')
+theImages.forEach(image => imageObserver.observe(image))
+console.log(document.querySelectorAll('.actual-image'))
+
+// Create a event fucnc that allows for navigating images with arrow keys. 
+document.addEventListener('keydown', (e) => {
+    // console.log(e.key)
+    // console.log(e.code)
+    if (e.key === 'ArrowLeft') {
+        spanButtonLeft.click
+    } else if (e.key === 'ArrowRight') {
+        spanButtonRight.click
+    }
+})
