@@ -47,11 +47,9 @@ console.log(document.querySelectorAll('.actual-image'))
 
 // Create a event fucnc that allows for navigating images with arrow keys. 
 document.addEventListener('keydown', (e) => {
-    // console.log(e.key)
-    // console.log(e.code)
-    if (e.key === 'ArrowLeft') {
-        spanButtonLeft.click
-    } else if (e.key === 'ArrowRight') {
-        spanButtonRight.click
+    if (e.code === 'ArrowLeft') {
+        spanButtonLeft.click()
+    } else if (e.code === 'ArrowRight') {
+        spanButtonRight.click()
     }
 })

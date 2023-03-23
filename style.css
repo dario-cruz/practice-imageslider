@@ -35,7 +35,7 @@ img {
     content-visibility: auto;
     image-rendering: optimizeSpeed;
     opacity: 0;
-    transition: all .5s ease;
+    transition: all 1s ease;
 }
 
 
