@@ -28,14 +28,12 @@ span {
 }
 
 img {
-    height: 32em;
-    width: 32em;
+    height: 38em;
+    width: 38em;
     object-fit: cover;
-    /* margin-left: auto;
-    margin-right: auto;
-    margin-top: 8em;
-    margin-bottom: 8em; */
     border: 5px solid white;
+    content-visibility: auto;
+    image-rendering: optimizeSpeed;
 }
 
 header {
@@ -70,8 +68,7 @@ header {
 .slider-container {
     overflow: hidden;
     scrollbar-width: none;
-    /* display: flex; */
-    /* flex-direction: column; */
+
 }
 .slider-container::-webkit-scrollbar {
     display: none;
